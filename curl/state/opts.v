@@ -3,7 +3,7 @@
 module state
 
 // TODO: check commented after debian 10 EOL, June 30, 2024. Compare Ubuntu LTS 22.04 with Debian 11.
-enum Opt {
+pub enum Opt {
 	abstract_unix_socket       = C.CURLOPT_ABSTRACT_UNIX_SOCKET       // abstract Unix domain socket
 	accepttimeout_ms           = C.CURLOPT_ACCEPTTIMEOUT_MS           // timeout waiting for FTP server to connect back
 	accept_encoding            = C.CURLOPT_ACCEPT_ENCODING            // automatic decompression of HTTP downloads

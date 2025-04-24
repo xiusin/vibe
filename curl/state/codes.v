@@ -93,7 +93,7 @@ pub enum Ecode {
 	writefunc_error          = C.CURL_WRITEFUNC_ERROR     // 7.87.0
 }
 
-enum Mcode {
+pub enum Mcode {
 	call_multi_perform    = C.CURLM_CALL_MULTI_PERFORM
 	call_multi_socket     = C.CURLM_CALL_MULTI_SOCKET
 	ok                    = C.CURLM_OK
@@ -120,7 +120,7 @@ pub enum SHEcode {
 	not_built_in = C.CURLSHE_NOT_BUILT_IN
 }
 
-enum UEcode {
+pub enum UEcode {
 	bad_handle         = C.CURLUE_BAD_HANDLE
 	bad_partpointer    = C.CURLUE_BAD_PARTPOINTER
 	malformed_input    = C.CURLUE_MALFORMED_INPUT
@@ -152,7 +152,7 @@ enum UEcode {
 	bad_user           = C.CURLUE_BAD_USER     // 7.81.0
 }
 
-enum Hcode {
+pub enum Hcode {
 	curlhe_badindex      = C.CURLHE_BADINDEX      // 7.83.0
 	curlhe_missing       = C.CURLHE_MISSING       // 7.83.0
 	curlhe_noheaders     = C.CURLHE_NOHEADERS     // 7.83.0
